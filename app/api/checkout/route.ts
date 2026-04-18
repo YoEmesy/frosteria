@@ -1,9 +1,7 @@
 import { NextResponse } from "next/server";
 import Stripe from "stripe";
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-  apiVersion: "2023-10-16",
-});
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!);
 
 export async function POST() {
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
@@ -15,12 +13,11 @@ export async function POST() {
         {
           price_data: {
             currency: "eur",
-            unit_amount: 9900, // €99.00 in cents
+            unit_amount: 9900,
             product_data: {
               name: "Frosteria Arc Pro — Misting Fan",
               description:
                 "16-inch standing misting fan · 4L tank · 70° oscillation · CE certified · Free EU shipping",
-              images: ["https://frosteria.com/product.jpg"], // Replace with real image URL
             },
           },
           quantity: 1,

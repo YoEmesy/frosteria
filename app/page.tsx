@@ -9,6 +9,7 @@ import BuySection from "@/components/BuySection";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 import StickyCTA from "@/components/StickyCTA";
+import EmailPopup from "@/components/EmailPopup";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
       </main>
       <Footer />
       <StickyCTA />
+      <EmailPopup />
     </>
   );
 }

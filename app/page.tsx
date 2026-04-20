@@ -10,6 +10,7 @@ import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 import StickyCTA from "@/components/StickyCTA";
 import EmailPopup from "@/components/EmailPopup";
+import ScrollToTop from "@/components/ScrollToTop";
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
       <Footer />
       <StickyCTA />
       <EmailPopup />
+      <ScrollToTop />
     </>
   );
 }

@@ -221,6 +221,34 @@ nav.scrolled {
   transform-origin: center center;
 }
 
+/* ── SCROLL TO TOP BUTTON ── */
+@keyframes scrollBtnFloat {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-6px); }
+}
+
+@keyframes orbitSnowflake {
+  from { transform: rotate(0deg) translateX(30px) rotate(0deg); }
+  to   { transform: rotate(360deg) translateX(30px) rotate(-360deg); }
+}
+
+.scroll-top-orbit {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: orbitSnowflake 5s linear infinite;
+  opacity: 0.65;
+  pointer-events: none;
+}
+
+.scroll-top-btn:hover .scroll-top-orbit {
+  animation: orbitSnowflake 2s linear infinite;
+  opacity: 0.9;
+}
+
 /* ── MOBILE RESPONSIVE ── */
 @media (max-width: 768px) {
 

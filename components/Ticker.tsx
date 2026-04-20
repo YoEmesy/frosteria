@@ -25,7 +25,7 @@ export default function Ticker() {
         position: "absolute", inset: 0,
         backgroundImage: `url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23A6D2DC' stroke-width='0.6'%3E%3Cline x1='40' y1='4' x2='40' y2='76'/%3E%3Cline x1='4' y1='40' x2='76' y2='40'/%3E%3Cline x1='11.5' y1='11.5' x2='68.5' y2='68.5'/%3E%3Cline x1='68.5' y1='11.5' x2='11.5' y2='68.5'/%3E%3Cline x1='40' y1='10' x2='34' y2='16'/%3E%3Cline x1='40' y1='10' x2='46' y2='16'/%3E%3Cline x1='40' y1='70' x2='34' y2='64'/%3E%3Cline x1='40' y1='70' x2='46' y2='64'/%3E%3Cline x1='10' y1='40' x2='16' y2='34'/%3E%3Cline x1='10' y1='40' x2='16' y2='46'/%3E%3Cline x1='70' y1='40' x2='64' y2='34'/%3E%3Cline x1='70' y1='40' x2='64' y2='46'/%3E%3C/g%3E%3C/svg%3E")`,
         backgroundSize: "80px 80px",
-        opacity: 0.07,
+        opacity: 0.04,
         animation: "tickerPatternDrift 18s linear infinite",
         pointerEvents: "none",
       }} />

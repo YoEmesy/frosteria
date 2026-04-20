@@ -28,13 +28,8 @@ export default function Nav() {
         transition: "background 0.3s ease, box-shadow 0.3s ease",
       }}
     >
-      <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-        <div className="logo-orbit" style={{
-          width: 32, height: 32, borderRadius: "50%",
-          background: "linear-gradient(135deg, #3D7A8A, #A6D2DC)",
-          display: "flex", alignItems: "center", justifyContent: "center",
-          fontSize: 16,
-        }}>
+      <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+        <div className="nav-logo logo-orbit">
           <span className="logo-snowflake">❄</span>
         </div>
         <span style={{

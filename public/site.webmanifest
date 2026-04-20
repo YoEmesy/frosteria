@@ -1,0 +1,10 @@
+{
+  "name": "Frosteria Arc Pro",
+  "short_name": "Frosteria",
+  "icons": [
+    { "src": "/logo192.png", "sizes": "192x192", "type": "image/png" }
+  ],
+  "theme_color": "#1C2B3A",
+  "background_color": "#0d1b27",
+  "display": "standalone"
+}

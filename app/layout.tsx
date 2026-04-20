@@ -5,6 +5,17 @@ export const metadata: Metadata = {
   title: "Frosteria Arc Pro — The Fan Your Home Has Been Waiting For",
   description: "Misting fan that actually cools. 4L tank, 70° oscillation, whisper-quiet 35dB. CE certified. Free EU shipping.",
   keywords: "misting fan, cooling fan, frosteria, arc pro, standing fan, water mist fan",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.png",    type: "image/png", sizes: "32x32" },
+    ],
+    apple: [
+      { url: "/apple-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+    shortcut: "/favicon.ico",
+  },
+  manifest: "/site.webmanifest",
   openGraph: {
     title: "Frosteria Arc Pro",
     description: "Stay Cool. Live Beautifully.",

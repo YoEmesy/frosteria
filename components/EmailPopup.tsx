@@ -1,6 +1,25 @@
 "use client";
 import { useState, useEffect } from "react";
 
+function SnowflakeSVG({ size = 30 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ display: "block" }}>
+      <line x1="12" y1="2" x2="12" y2="22" stroke="white" strokeWidth="2" strokeLinecap="round"/>
+      <line x1="2" y1="12" x2="22" y2="12" stroke="white" strokeWidth="2" strokeLinecap="round"/>
+      <line x1="5.5" y1="5.5" x2="18.5" y2="18.5" stroke="white" strokeWidth="2" strokeLinecap="round"/>
+      <line x1="18.5" y1="5.5" x2="5.5" y2="18.5" stroke="white" strokeWidth="2" strokeLinecap="round"/>
+      <line x1="12" y1="5" x2="9.5" y2="7.5" stroke="white" strokeWidth="1.5" strokeLinecap="round"/>
+      <line x1="12" y1="5" x2="14.5" y2="7.5" stroke="white" strokeWidth="1.5" strokeLinecap="round"/>
+      <line x1="12" y1="19" x2="9.5" y2="16.5" stroke="white" strokeWidth="1.5" strokeLinecap="round"/>
+      <line x1="12" y1="19" x2="14.5" y2="16.5" stroke="white" strokeWidth="1.5" strokeLinecap="round"/>
+      <line x1="5" y1="12" x2="7.5" y2="9.5" stroke="white" strokeWidth="1.5" strokeLinecap="round"/>
+      <line x1="5" y1="12" x2="7.5" y2="14.5" stroke="white" strokeWidth="1.5" strokeLinecap="round"/>
+      <line x1="19" y1="12" x2="16.5" y2="9.5" stroke="white" strokeWidth="1.5" strokeLinecap="round"/>
+      <line x1="19" y1="12" x2="16.5" y2="14.5" stroke="white" strokeWidth="1.5" strokeLinecap="round"/>
+    </svg>
+  );
+}
+
 export default function EmailPopup() {
   const [visible, setVisible] = useState(false);
   const [email, setEmail] = useState("");
@@ -122,7 +141,7 @@ export default function EmailPopup() {
                   display: "inline-flex", alignItems: "center", justifyContent: "center",
                   fontSize: 30,
                 }}>
-                  <span className="logo-snowflake">❄</span>
+                  <span className="logo-snowflake"><SnowflakeSVG size={30} /></span>
                 </div>
               </div>
 

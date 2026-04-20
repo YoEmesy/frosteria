@@ -94,9 +94,14 @@ body { font-family: 'Inter', sans-serif; background: #fff; color: #1A1A1A; overf
 
 .logo-snowflake {
   display: inline-flex;
+  align-items: center;
+  justify-content: center;
   animation: logoSpin 20s linear infinite;
-  color: #fff;
-  transition: filter 0.3s ease, text-shadow 0.3s ease;
+  transition: filter 0.3s ease;
+}
+
+.logo-snowflake svg line {
+  transition: stroke 0.3s ease;
 }
 
 .logo-orbit {
@@ -154,7 +159,7 @@ body { font-family: 'Inter', sans-serif; background: #fff; color: #1A1A1A; overf
 /* Snowflake speeds up + glows on hover */
 .nav-logo:hover .logo-snowflake {
   animation: logoSpin 4s linear infinite;
-  filter: drop-shadow(0 0 6px rgba(200,240,255,0.95)) drop-shadow(0 0 12px rgba(166,210,220,0.7));
+  filter: drop-shadow(0 0 5px rgba(200,240,255,1)) drop-shadow(0 0 10px rgba(166,210,220,0.8));
 }
 
 @keyframes mistFloat {

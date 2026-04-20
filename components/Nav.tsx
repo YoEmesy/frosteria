@@ -1,6 +1,35 @@
 "use client";
 import { useEffect, useRef } from "react";
 
+function SnowflakeSVG() {
+  return (
+    <svg
+      width="22" height="22" viewBox="0 0 24 24"
+      fill="none" xmlns="http://www.w3.org/2000/svg"
+      style={{ display: "block" }}
+    >
+      {/* Main cross */}
+      <line x1="12" y1="2" x2="12" y2="22" stroke="white" strokeWidth="2" strokeLinecap="round"/>
+      <line x1="2" y1="12" x2="22" y2="12" stroke="white" strokeWidth="2" strokeLinecap="round"/>
+      {/* Diagonals */}
+      <line x1="5.5" y1="5.5" x2="18.5" y2="18.5" stroke="white" strokeWidth="2" strokeLinecap="round"/>
+      <line x1="18.5" y1="5.5" x2="5.5" y2="18.5" stroke="white" strokeWidth="2" strokeLinecap="round"/>
+      {/* Top arm branches */}
+      <line x1="12" y1="5" x2="9.5" y2="7.5" stroke="white" strokeWidth="1.5" strokeLinecap="round"/>
+      <line x1="12" y1="5" x2="14.5" y2="7.5" stroke="white" strokeWidth="1.5" strokeLinecap="round"/>
+      {/* Bottom arm branches */}
+      <line x1="12" y1="19" x2="9.5" y2="16.5" stroke="white" strokeWidth="1.5" strokeLinecap="round"/>
+      <line x1="12" y1="19" x2="14.5" y2="16.5" stroke="white" strokeWidth="1.5" strokeLinecap="round"/>
+      {/* Left arm branches */}
+      <line x1="5" y1="12" x2="7.5" y2="9.5" stroke="white" strokeWidth="1.5" strokeLinecap="round"/>
+      <line x1="5" y1="12" x2="7.5" y2="14.5" stroke="white" strokeWidth="1.5" strokeLinecap="round"/>
+      {/* Right arm branches */}
+      <line x1="19" y1="12" x2="16.5" y2="9.5" stroke="white" strokeWidth="1.5" strokeLinecap="round"/>
+      <line x1="19" y1="12" x2="16.5" y2="14.5" stroke="white" strokeWidth="1.5" strokeLinecap="round"/>
+    </svg>
+  );
+}
+
 export default function Nav() {
   const navRef = useRef<HTMLElement>(null);
 
@@ -13,6 +42,10 @@ export default function Nav() {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   return (
     <nav
@@ -28,15 +61,24 @@ export default function Nav() {
         transition: "background 0.3s ease, box-shadow 0.3s ease",
       }}
     >
-      <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+      <button
+        onClick={scrollToTop}
+        style={{
+          display: "flex", alignItems: "center", gap: 12,
+          background: "none", border: "none", cursor: "pointer", padding: 0,
+        }}
+      >
         <div className="nav-logo logo-orbit">
-          <span className="logo-snowflake">❄</span>
+          <span className="logo-snowflake">
+            <SnowflakeSVG />
+          </span>
         </div>
         <span style={{
           fontFamily: "'Playfair Display', serif",
           fontWeight: 700, fontSize: 20, color: "#fff", letterSpacing: "0.02em",
         }}>Frosteria</span>
-      </div>
+      </button>
+
       <div style={{ display: "flex", alignItems: "center", gap: 32 }}>
         {["Features", "Reviews", "FAQ"].map((item) => (
           <a

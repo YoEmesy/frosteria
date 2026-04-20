@@ -115,13 +115,15 @@ export default function EmailPopup() {
             <>
               {/* Snowflake icon */}
               <div style={{ textAlign: "center", marginBottom: 24 }}>
-                <div style={{
+                <div className="logo-orbit" style={{
                   width: 64, height: 64, borderRadius: "50%",
                   background: "linear-gradient(135deg, #3D7A8A22, #A6D2DC22)",
                   border: "1px solid rgba(166,210,220,0.2)",
                   display: "inline-flex", alignItems: "center", justifyContent: "center",
                   fontSize: 30,
-                }}>❄</div>
+                }}>
+                  <span className="logo-snowflake">❄</span>
+                </div>
               </div>
 
               <div style={{ textAlign: "center", marginBottom: 28 }}>

@@ -35,8 +35,8 @@ export default function Hero() {
       }}
     >
       {/* Background orbs */}
-      <div style={{ position: "absolute", top: "15%", right: "8%", width: 500, height: 500, borderRadius: "50%", background: "radial-gradient(circle, rgba(61,122,138,0.15) 0%, transparent 70%)", animation: "mistPulse 4s ease-in-out infinite" }} />
-      <div style={{ position: "absolute", bottom: "10%", left: "5%", width: 400, height: 400, borderRadius: "50%", background: "radial-gradient(circle, rgba(166,210,220,0.08) 0%, transparent 70%)", animation: "mistPulse 6s ease-in-out infinite 2s" }} />
+      <div className="hero-orb" style={{ position: "absolute", top: "15%", right: "8%", width: 500, height: 500, borderRadius: "50%", background: "radial-gradient(circle, rgba(61,122,138,0.15) 0%, transparent 70%)", animation: "mistPulse 4s ease-in-out infinite" }} />
+      <div className="hero-orb" style={{ position: "absolute", bottom: "10%", left: "5%", width: 400, height: 400, borderRadius: "50%", background: "radial-gradient(circle, rgba(166,210,220,0.08) 0%, transparent 70%)", animation: "mistPulse 6s ease-in-out infinite 2s" }} />
 
       <div className="hero-grid" style={{ maxWidth: 1200, width: "100%", display: "grid", gridTemplateColumns: "1fr 1fr", gap: 60, alignItems: "center", position: "relative", zIndex: 2 }}>
 

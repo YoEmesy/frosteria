@@ -6,7 +6,7 @@ export default function Ticker() {
     "✦ Ultra-Quiet 35dB Operation",
     "✦ 70° Auto-Oscillation",
     "✦ Cools Up To 15°C",
-    "✦ 30-Day Returns",
+    "✦ 14-Day Returns",
     "✦ 1-Year Warranty",
     "✦ Ships in 3–5 Business Days",
   ];

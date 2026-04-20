@@ -34,7 +34,6 @@ export default function HowItWorks() {
                 <div style={{ width: 64, height: 64, borderRadius: "50%", background: "linear-gradient(135deg, #3D7A8A, #A6D2DC)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 28 }}>
                   {step.icon}
                 </div>
-                <div style={{ position: "absolute", top: -8, right: "calc(100% - 80px)", fontFamily: "'Playfair Display', serif", fontSize: 64, fontWeight: 700, color: "rgba(61,122,138,0.1)", lineHeight: 1 }}>{step.num}</div>
               </div>
               <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: 22, fontWeight: 700, color: "#1C2B3A", marginBottom: 12 }}>{step.title}</h3>
               <p style={{ color: "#666", fontSize: 15, lineHeight: 1.7 }}>{step.desc}</p>

@@ -27,17 +27,24 @@ export default function EmailPopup() {
   const [dismissed, setDismissed] = useState(false);
 
   useEffect(() => {
-    // Don't show if already dismissed this session
-    if (sessionStorage.getItem("popup_dismissed")) return;
+    // Use localStorage with 7-day expiry so it resets for returning visitors
+    const POPUP_KEY = "frosteria_popup_v2";
+    const dismissedAt = localStorage.getItem(POPUP_KEY);
+    if (dismissedAt) {
+      const daysSince = (Date.now() - parseInt(dismissedAt)) / (1000 * 60 * 60 * 24);
+      if (daysSince < 7) return;
+    }
 
-    // Show after 12 seconds
+    // Show after 8 seconds
     const timer = setTimeout(() => {
       setVisible(true);
-    }, 12000);
+    }, 8000);
 
     // Also show on exit intent (mouse leaves top of page)
     const handleMouseOut = (e: MouseEvent) => {
-      if (e.clientY <= 5 && !sessionStorage.getItem("popup_dismissed")) {
+      const key = "frosteria_popup_v2";
+      const d = localStorage.getItem(key);
+      if (e.clientY <= 5 && !d) {
         setVisible(true);
       }
     };
@@ -52,7 +59,7 @@ export default function EmailPopup() {
   const dismiss = () => {
     setVisible(false);
     setDismissed(true);
-    sessionStorage.setItem("popup_dismissed", "1");
+    localStorage.setItem("frosteria_popup_v2", Date.now().toString());
   };
 
   const handleSubmit = async (e: React.FormEvent) => {

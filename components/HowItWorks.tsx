@@ -27,7 +27,7 @@ export default function HowItWorks() {
           <div style={{ color: "#3D7A8A", fontSize: 12, fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 12 }}>Simple as 1 – 2 – 3</div>
           <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: "clamp(32px, 4vw, 48px)", fontWeight: 700, color: "#1C2B3A" }}>How It Works</h2>
         </div>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 40 }}>
+        <div className="how-grid" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 40 }}>
           {steps.map((step, i) => (
             <div key={i} className="reveal" style={{ transitionDelay: `${i * 0.15}s` }}>
               <div style={{ position: "relative", marginBottom: 28 }}>

@@ -38,13 +38,13 @@ export default function Hero() {
       <div style={{ position: "absolute", top: "15%", right: "8%", width: 500, height: 500, borderRadius: "50%", background: "radial-gradient(circle, rgba(61,122,138,0.15) 0%, transparent 70%)", animation: "mistPulse 4s ease-in-out infinite" }} />
       <div style={{ position: "absolute", bottom: "10%", left: "5%", width: 400, height: 400, borderRadius: "50%", background: "radial-gradient(circle, rgba(166,210,220,0.08) 0%, transparent 70%)", animation: "mistPulse 6s ease-in-out infinite 2s" }} />
 
-      <div style={{ maxWidth: 1200, width: "100%", display: "grid", gridTemplateColumns: "1fr 1fr", gap: 60, alignItems: "center", position: "relative", zIndex: 2 }}>
+      <div className="hero-grid" style={{ maxWidth: 1200, width: "100%", display: "grid", gridTemplateColumns: "1fr 1fr", gap: 60, alignItems: "center", position: "relative", zIndex: 2 }}>
 
         {/* LEFT: text */}
         <div style={{ animation: "fadeUp 0.9s ease forwards" }}>
           <div style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(61,122,138,0.2)", border: "1px solid rgba(61,122,138,0.4)", borderRadius: 20, padding: "6px 16px", marginBottom: 24 }}>
             <span style={{ fontSize: 12 }}>✦</span>
-            <span style={{ color: "#A6D2DC", fontSize: 12, fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase" }}>New for Summer 2025</span>
+            <span style={{ color: "#A6D2DC", fontSize: 12, fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase" }}>Beat the Heat · Summer 2026</span>
           </div>
           <h1 style={{ fontFamily: "'Playfair Display', serif", fontSize: "clamp(42px, 6vw, 68px)", fontWeight: 700, color: "#fff", lineHeight: 1.1, marginBottom: 24 }}>
             The Fan Your
@@ -104,7 +104,7 @@ export default function Hero() {
         </div>
 
         {/* RIGHT: fan visual */}
-        <div style={{ display: "flex", justifyContent: "center", alignItems: "center", position: "relative" }}>
+        <div className="hero-fan" style={{ display: "flex", justifyContent: "center", alignItems: "center", position: "relative" }}>
           {/* Glow */}
           <div style={{ position: "absolute", width: 360, height: 360, borderRadius: "50%", background: "radial-gradient(circle, rgba(61,122,138,0.25) 0%, transparent 70%)", animation: "mistPulse 3s ease-in-out infinite" }} />
 

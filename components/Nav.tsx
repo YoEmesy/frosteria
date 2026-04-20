@@ -79,7 +79,7 @@ export default function Nav() {
         }}>Frosteria</span>
       </button>
 
-      <div style={{ display: "flex", alignItems: "center", gap: 32 }}>
+      <div className="nav-links" style={{ display: "flex", alignItems: "center", gap: 32 }}>
         {["Features", "Reviews", "FAQ"].map((item) => (
           <a
             key={item}

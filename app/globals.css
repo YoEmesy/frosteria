@@ -220,3 +220,53 @@ nav.scrolled {
   animation: spinSlow 12s linear infinite;
   transform-origin: center center;
 }
+
+/* ── MOBILE RESPONSIVE ── */
+@media (max-width: 768px) {
+
+  /* Nav — hide text links, keep Order Now button */
+  .nav-links a:not(:last-child) { display: none !important; }
+  nav { padding: 14px 20px !important; }
+
+  /* Hero — stack to single column, hide fan visual */
+  .hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+  .hero-fan { display: none !important; }
+  #hero { padding: 100px 20px 60px !important; }
+
+  /* Features — single column */
+  .features-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+  #features { padding: 60px 20px !important; }
+
+  /* How It Works — single column */
+  .how-grid {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+  #how-it-works { padding: 60px 20px !important; }
+
+  /* Comparison — horizontal scroll */
+  .comparison-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 20px;
+  }
+  .comparison-scroll > div {
+    min-width: 580px;
+  }
+  #faq { padding: 60px 20px !important; }
+
+  /* Reviews / BuySection / General sections */
+  section { padding-left: 20px !important; padding-right: 20px !important; }
+
+  /* Ticker — reduce font size slightly */
+  .ticker-track span { padding: 0 24px !important; font-size: 12px !important; }
+
+  /* Sticky CTA full width */
+  .sticky-cta { padding: 12px 20px !important; }
+}

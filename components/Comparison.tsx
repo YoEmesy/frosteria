@@ -31,6 +31,7 @@ export default function Comparison() {
           <div style={{ color: "#3D7A8A", fontSize: 12, fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 12 }}>Side by Side</div>
           <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 700, color: "#1C2B3A" }}>How We Compare</h2>
         </div>
+        <div className="comparison-scroll">
         <div className="reveal" style={{ borderRadius: 20, overflow: "hidden", boxShadow: "0 20px 60px rgba(28,43,58,0.12)", border: "1px solid rgba(28,43,58,0.08)" }}>
           {/* Header */}
           <div style={{ display: "grid", gridTemplateColumns: "2fr 1.4fr 1.4fr 1.4fr", background: "#1C2B3A" }}>
@@ -60,6 +61,7 @@ export default function Comparison() {
             </div>
           ))}
         </div>
+        </div>{/* /comparison-scroll */}
         <div className="reveal" style={{ textAlign: "center", marginTop: 28, color: "#888", fontSize: 13 }}>
           Same premium cooling — at a third of the price.
         </div>

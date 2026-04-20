@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
+import { FiveStars } from "@/components/BrandIcons";
 
 export default function StickyCTA() {
   const [visible, setVisible] = useState(false);
@@ -46,7 +47,7 @@ export default function StickyCTA() {
           <span style={{ color: "rgba(255,255,255,0.3)", textDecoration: "line-through", fontSize: 14 }}>€249</span>
           <span style={{ color: "#A6D2DC", fontWeight: 700, fontSize: 22 }}>€99</span>
         </div>
-        <div style={{ display: "flex", gap: 1 }}>{"★★★★★".split("").map((s, i) => <span key={i} style={{ color: "#f5a623", fontSize: 14 }}>{s}</span>)}</div>
+        <FiveStars size={14} />
       </div>
       <button
         onClick={handleCheckout}

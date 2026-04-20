@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useRef } from "react";
+import { FiveStars } from "@/components/BrandIcons";
 
 const reviews = [
   {
@@ -45,7 +46,7 @@ export default function Reviews() {
             What People Are Saying
           </h2>
           <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: 8, marginTop: 16 }}>
-            <div style={{ display: "flex", gap: 2 }}>{"★★★★★".split("").map((s, i) => <span key={i} style={{ color: "#f5a623", fontSize: 20 }}>{s}</span>)}</div>
+            <FiveStars size={20} />
             <span style={{ color: "#666", fontSize: 14 }}>4.9 / 5 from 200+ reviews</span>
           </div>
         </div>
@@ -61,9 +62,7 @@ export default function Reviews() {
                 transitionDelay: `${i * 0.12}s`,
               }}
             >
-              <div style={{ display: "flex", gap: 2, marginBottom: 16 }}>
-                {"★★★★★".split("").map((s, j) => <span key={j} style={{ color: "#f5a623", fontSize: 18 }}>{s}</span>)}
-              </div>
+              <FiveStars size={18} style={{ marginBottom: 16 }} />
               <p style={{ color: "#444", fontSize: 15, lineHeight: 1.7, marginBottom: 24, fontStyle: "italic" }}>"{r.text}"</p>
               <div style={{ borderTop: "1px solid rgba(28,43,58,0.06)", paddingTop: 16, display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                 <div>

@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useRef } from "react";
+import { IconWaterDrop, IconQuiet, IconOscillation, IconSnowflake, IconCool } from "@/components/BrandIcons";
 
 export default function Hero() {
   const counterRefs = useRef<(HTMLSpanElement | null)[]>([]);
@@ -60,13 +61,15 @@ export default function Hero() {
           {/* Stat pills */}
           <div style={{ display: "flex", gap: 16, marginBottom: 40, flexWrap: "wrap" }}>
             {[
-              { icon: "💧", label: "Tank", idx: 0 },
-              { icon: "🔇", label: "Noise", idx: 1 },
-              { icon: "↔", label: "Swing", idx: 2 },
-              { icon: "❄", label: "Cools", idx: 3 },
-            ].map(({ icon, label, idx }) => (
-              <div key={label} style={{ background: "rgba(255,255,255,0.06)", border: "1px solid rgba(255,255,255,0.12)", borderRadius: 12, padding: "12px 20px", textAlign: "center" }}>
-                <div style={{ fontSize: 20, marginBottom: 4 }}>{icon}</div>
+              { Icon: IconWaterDrop,   label: "Tank",  idx: 0 },
+              { Icon: IconQuiet,       label: "Noise", idx: 1 },
+              { Icon: IconOscillation, label: "Swing", idx: 2 },
+              { Icon: IconSnowflake,   label: "Cools", idx: 3 },
+            ].map(({ Icon, label, idx }) => (
+              <div key={label} style={{ background: "rgba(255,255,255,0.06)", border: "1px solid rgba(166,210,220,0.15)", borderRadius: 12, padding: "12px 20px", textAlign: "center" }}>
+                <div style={{ display: "flex", justifyContent: "center", marginBottom: 6 }}>
+                  <Icon size={22} color="#A6D2DC" />
+                </div>
                 <div style={{ color: "#A6D2DC", fontSize: 22, fontWeight: 700, fontFamily: "'Playfair Display', serif" }}>
                   <span ref={el => { counterRefs.current[idx] = el; }}>—</span>
                 </div>
@@ -161,9 +164,9 @@ export default function Hero() {
 
           {/* Floating info badges */}
           {[
-            { style: { top: "10%", right: "-5%" }, icon: "🔇", val: "35dB", sub: "Ultra-quiet" },
-            { style: { bottom: "25%", left: "-8%" }, icon: "💧", val: "4L", sub: "Large tank" },
-            { style: { bottom: "10%", right: "0%" }, icon: "❄", val: "−15°C", sub: "Temperature drop" },
+            { style: { top: "10%", right: "-5%" },   Icon: IconQuiet,     val: "35dB",   sub: "Ultra-quiet" },
+            { style: { bottom: "25%", left: "-8%" },  Icon: IconWaterDrop, val: "4L",     sub: "Large tank" },
+            { style: { bottom: "10%", right: "0%" },  Icon: IconSnowflake, val: "−15°C",  sub: "Temperature drop" },
           ].map((badge, i) => (
             <div key={i} style={{
               position: "absolute", ...badge.style,
@@ -174,7 +177,7 @@ export default function Hero() {
               display: "flex", alignItems: "center", gap: 10,
               animation: `float ${4 + i}s ease-in-out infinite ${i * 0.8}s`,
             }}>
-              <span style={{ fontSize: 20 }}>{badge.icon}</span>
+              <badge.Icon size={22} color="#A6D2DC" />
               <div>
                 <div style={{ color: "#A6D2DC", fontSize: 16, fontWeight: 700 }}>{badge.val}</div>
                 <div style={{ color: "rgba(255,255,255,0.5)", fontSize: 11 }}>{badge.sub}</div>

@@ -150,8 +150,8 @@ export function IconCertified({ size = 28, color = C, style }: IconProps) {
       {/* Inner glow shield */}
       <path d="M14 6 L21 9 L21 14 C21 18.5 14 22.5 14 22.5 C14 22.5 7 18.5 7 14 L7 9 Z"
         stroke={color} strokeWidth="0.8" strokeLinejoin="round" fill="none" opacity="0.35" />
-      {/* CE text */}
-      <text x="8.5" y="16.5" fontSize="7" fontWeight="bold" fill={color} fontFamily="sans-serif" letterSpacing="-0.5">CE</text>
+      {/* CE text — centred horizontally */}
+      <text x="14" y="17" textAnchor="middle" fontSize="7" fontWeight="bold" fill={color} fontFamily="sans-serif" letterSpacing="-0.5">CE</text>
     </svg>
   );
 }

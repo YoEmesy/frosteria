@@ -228,8 +228,8 @@ nav.scrolled {
 }
 
 @keyframes orbitSnowflake {
-  from { transform: rotate(0deg) translateX(30px) rotate(0deg); }
-  to   { transform: rotate(360deg) translateX(30px) rotate(-360deg); }
+  from { transform: rotate(0deg) translateX(16px) rotate(0deg); }
+  to   { transform: rotate(360deg) translateX(16px) rotate(-360deg); }
 }
 
 .scroll-top-orbit {

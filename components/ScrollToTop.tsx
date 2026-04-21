@@ -66,6 +66,7 @@ export default function ScrollToTop() {
           width: 52,
           height: 52,
           borderRadius: "50%",
+          overflow: "hidden",
           background: "rgba(13,27,39,0.42)",
           backdropFilter: "blur(18px)",
           WebkitBackdropFilter: "blur(18px)",

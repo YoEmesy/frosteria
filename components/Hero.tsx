@@ -99,8 +99,23 @@ export default function Hero() {
           </div>
 
           <div style={{ marginTop: 24, display: "flex", alignItems: "center", gap: 8 }}>
-            <div style={{ display: "flex" }}>
-              {["🇩🇪","🇫🇷","🇵🇱","🇳🇱","🇱🇻"].map(flag => <span key={flag} style={{ fontSize: 18 }}>{flag}</span>)}
+            <div style={{ display: "flex", gap: 2 }}>
+              {[
+                { code: "1f1e9-1f1ea", label: "Germany" },
+                { code: "1f1eb-1f1f7", label: "France" },
+                { code: "1f1f5-1f1f1", label: "Poland" },
+                { code: "1f1f3-1f1f1", label: "Netherlands" },
+                { code: "1f1f1-1f1fb", label: "Latvia" },
+              ].map(({ code, label }) => (
+                <img
+                  key={code}
+                  src={`https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/${code}.svg`}
+                  alt={label}
+                  width={20}
+                  height={20}
+                  style={{ display: "inline-block" }}
+                />
+              ))}
             </div>
             <span style={{ color: "rgba(255,255,255,0.4)", fontSize: 13 }}>Shipping across Europe</span>
           </div>
@@ -188,7 +203,7 @@ export default function Hero() {
       </div>
 
       {/* Scroll hint */}
-      <div style={{ position: "absolute", bottom: 30, left: "50%", transform: "translateX(-50%)", display: "flex", flexDirection: "column", alignItems: "center", gap: 6 }}>
+      <div className="hero-scroll-hint" style={{ position: "absolute", bottom: 30, left: "50%", transform: "translateX(-50%)", display: "flex", flexDirection: "column", alignItems: "center", gap: 6 }}>
         <span style={{ color: "rgba(255,255,255,0.3)", fontSize: 11, letterSpacing: "0.1em" }}>SCROLL</span>
         <div style={{ width: 1, height: 40, background: "linear-gradient(to bottom, rgba(255,255,255,0.3), transparent)" }} />
       </div>

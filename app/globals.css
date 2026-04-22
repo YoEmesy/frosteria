@@ -309,4 +309,7 @@ nav.scrolled {
 
   /* Sticky CTA full width */
   .sticky-cta { padding: 12px 20px !important; }
+
+  /* Hide scroll hint on mobile */
+  .hero-scroll-hint { display: none !important; }
 }

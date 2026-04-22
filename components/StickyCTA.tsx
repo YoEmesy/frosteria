@@ -45,7 +45,7 @@ export default function StickyCTA() {
         <div style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, color: "#fff", fontSize: 18 }}>Frosteria Arc Pro</div>
         <div style={{ display: "flex", alignItems: "baseline", gap: 8 }}>
           <span style={{ color: "rgba(255,255,255,0.3)", textDecoration: "line-through", fontSize: 14 }}>€249</span>
-          <span style={{ color: "#A6D2DC", fontWeight: 700, fontSize: 22 }}>€99</span>
+          <span style={{ color: "#A6D2DC", fontWeight: 700, fontSize: 22 }}>€119</span>
         </div>
         <FiveStars size={14} />
       </div>

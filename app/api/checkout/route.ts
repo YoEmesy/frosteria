@@ -13,7 +13,7 @@ export async function POST() {
         {
           price_data: {
             currency: "eur",
-            unit_amount: 9900,
+            unit_amount: 11900,
             product_data: {
               name: "Frosteria Arc Pro — Misting Fan",
               description:

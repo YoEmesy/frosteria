@@ -46,7 +46,7 @@ export default function BuySection() {
           <div style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(61,122,138,0.3)", borderRadius: 20, padding: "40px", marginBottom: 32 }}>
             <div style={{ display: "flex", justifyContent: "center", alignItems: "baseline", gap: 16, marginBottom: 8 }}>
               <span style={{ color: "rgba(255,255,255,0.3)", fontSize: 22, textDecoration: "line-through" }}>€249</span>
-              <span style={{ fontFamily: "'Playfair Display', serif", fontSize: 64, fontWeight: 700, color: "#fff", lineHeight: 1 }}>€99</span>
+              <span style={{ fontFamily: "'Playfair Display', serif", fontSize: 64, fontWeight: 700, color: "#fff", lineHeight: 1 }}>€119</span>
             </div>
             <div style={{ color: "#A6D2DC", fontSize: 14, marginBottom: 32 }}>Launch price — limited stock available</div>
             <div style={{ display: "flex", justifyContent: "center", gap: 24, flexWrap: "wrap", marginBottom: 36 }}>

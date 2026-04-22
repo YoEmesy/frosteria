@@ -91,7 +91,7 @@ export default function Hero() {
             onMouseEnter={e => (e.currentTarget.style.transform = "translateY(-2px)")}
             onMouseLeave={e => (e.currentTarget.style.transform = "translateY(0)")}
             >
-              Order Now — €99
+              Order Now — €119
             </a>
             <div style={{ color: "rgba(255,255,255,0.5)", fontSize: 13 }}>
               Free EU shipping · CE certified

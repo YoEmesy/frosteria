@@ -11,7 +11,7 @@ interface Cell {
 const rows: { label: string; sub?: string; frosteria: Cell; shark: Cell; generic: Cell }[] = [
   {
     label: "Price",
-    frosteria: { status: "price", text: "€99" },
+    frosteria: { status: "price", text: "€119" },
     shark:     { status: "price", text: "€349+" },
     generic:   { status: "price", text: "€35–60" },
   },

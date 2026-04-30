@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Frosteria Arc Pro — The Fan Your Home Has Been Waiting For",
-  description: "Misting fan that actually cools. 4L tank, 70° oscillation, whisper-quiet 35dB. CE certified. Free EU shipping.",
+  description: "Misting fan that actually cools. 4L tank, 70° oscillation, whisper-quiet operation. CE certified. Free EU shipping.",
   keywords: "misting fan, cooling fan, frosteria, arc pro, standing fan, water mist fan",
   icons: {
     icon: [

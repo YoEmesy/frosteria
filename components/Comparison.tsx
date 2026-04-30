@@ -32,9 +32,9 @@ const rows: { label: string; sub?: string; frosteria: Cell; shark: Cell; generic
   {
     label: "Noise Level",
     sub: "Lower is better",
-    frosteria: { status: "good", text: "35 dB" },
-    shark:     { status: "warn", text: "45 dB" },
-    generic:   { status: "bad",  text: "60 dB+" },
+    frosteria: { status: "good", text: "Whisper Quiet" },
+    shark:     { status: "warn", text: "Moderate" },
+    generic:   { status: "bad",  text: "Very Loud" },
   },
   {
     label: "CE Certified",

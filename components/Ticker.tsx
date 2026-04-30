@@ -3,7 +3,7 @@ export default function Ticker() {
     "✦ CE Certified for EU",
     "✦ Free Shipping Across Europe",
     "✦ 4L Integrated Water Tank",
-    "✦ Ultra-Quiet 35dB Operation",
+    "✦ Ultra-Quiet Operation",
     "✦ 70° Auto-Oscillation",
     "✦ Cools Up To 15°C",
     "✦ 14-Day Returns",

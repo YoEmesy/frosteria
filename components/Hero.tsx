@@ -179,7 +179,7 @@ export default function Hero() {
 
           {/* Floating info badges */}
           {[
-            { style: { top: "10%", right: "-5%" },   Icon: IconQuiet,     val: "35dB",   sub: "Ultra-quiet" },
+            { style: { top: "10%", right: "-5%" },   Icon: IconQuiet,     val: "Silent",  sub: "Ultra-quiet" },
             { style: { bottom: "25%", left: "-8%" },  Icon: IconWaterDrop, val: "4L",     sub: "Large tank" },
             { style: { bottom: "10%", right: "0%" },  Icon: IconSnowflake, val: "−15°C",  sub: "Temperature drop" },
           ].map((badge, i) => (

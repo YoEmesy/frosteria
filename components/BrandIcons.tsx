@@ -69,7 +69,6 @@ export function IconQuiet({ size = 28, color = C, style }: IconProps) {
       <path d="M20.5 8 Q24.5 14 20.5 20" stroke={color} strokeWidth="1.5" strokeLinecap="round" fill="none" opacity="0.5" />
       {/* Quiet indicator — horizontal dash */}
       <line x1="16" y1="24" x2="25" y2="24" stroke={color} strokeWidth="1.2" strokeLinecap="round" opacity="0.4" />
-      <text x="18" y="24.5" fontSize="5" fill={color} opacity="0.7" fontFamily="sans-serif">35dB</text>
     </svg>
   );
 }
@@ -151,7 +150,6 @@ export function IconCertified({ size = 28, color = C, style }: IconProps) {
       <path d="M14 6 L21 9 L21 14 C21 18.5 14 22.5 14 22.5 C14 22.5 7 18.5 7 14 L7 9 Z"
         stroke={color} strokeWidth="0.8" strokeLinejoin="round" fill="none" opacity="0.35" />
       {/* CE text — centred horizontally */}
-      <text x="14" y="17" textAnchor="middle" fontSize="7" fontWeight="bold" fill={color} fontFamily="sans-serif" letterSpacing="-0.5">CE</text>
     </svg>
   );
 }

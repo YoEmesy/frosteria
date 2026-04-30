@@ -6,7 +6,7 @@ type IconComponent = React.ComponentType<{ size?: number; color?: string }>;
 
 const features: { Icon: IconComponent; title: string; desc: string }[] = [
   { Icon: IconWaterDrop,   title: "4L Integrated Tank",      desc: "Built-in cylindrical reservoir holds enough water for 8+ hours of continuous misting. No refill interruptions." },
-  { Icon: IconQuiet,       title: "Whisper-Quiet 35dB",      desc: "Library-level silence. Run it all night without disturbing your sleep or your work-from-home focus." },
+  { Icon: IconQuiet,       title: "Whisper-Quiet",            desc: "Library-level silence. Run it all night without disturbing your sleep or your work-from-home focus." },
   { Icon: IconOscillation, title: "70° Auto-Oscillation",    desc: "Sweeps a wide arc automatically, distributing cooling mist evenly across the entire room." },
   { Icon: IconRemote,      title: "Remote Control Included", desc: "Change speed, mist, timer, and oscillation from your sofa. No getting up required." },
   { Icon: IconCool,        title: "Cools Up to 15°C",        desc: "Evaporative mist technology drops ambient temperature dramatically — not just blowing warm air around." },
